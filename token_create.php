@@ -37,6 +37,8 @@ function token()
     //array_rand使用
     for($i=0;i<=$length_token;i++){
         $token=$token.array_rand($numAlphaArray);
+        //ドットだと、、、何かのクラスの変数に見えることがある（別の言語だと）
+        $token.=array_rand($numAlphaArray);
     }
 
 
@@ -45,6 +47,7 @@ function token()
     //もし自分でarray_randを作るとしたら？
     //時間をキーにして関数作ったりしたら、逆に再現できる気がする…
     for($i=0;i<=$length_token;i++){
+
         //再現できてもよい？
         $tokenBaseSeconds=date('ss');
         $tokenBaseMinutes=date('ii');
