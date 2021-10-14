@@ -8,9 +8,9 @@
 <?php
 include('./token_create.php');
 
-$send_url=url(id(),token());
+$createdUrl=createUrl(createId(),createToken());
 
-echo $send_url;
+echo $createdUrl;
 
 ?>
 
