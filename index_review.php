@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
 </head>
 <?php
-include('./token_create.php');
+include('./token_create_review.php');
 
 $createdUrl=createUrl(createId(),createToken());
 
